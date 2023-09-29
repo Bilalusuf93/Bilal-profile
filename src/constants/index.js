@@ -20,9 +20,15 @@ import {
   tesla,
   shopify,
   carrent,
-  jobit,
+  Delcit,
   tripguide,
   threejs,
+  mattressfirm,
+  SydneyForex,
+  HRM,
+  Asset,
+  Qatar,
+  WebLogo
 } from "../assets";
 
 export const navLinks = [
@@ -231,7 +237,7 @@ const projects = [
       "Caching implementation for performance",
       "I am fully involved in development of PLP, PDP and Home page",
       "Tealium integration for tracking",
-      "Edgio with Next.Js"
+      "<a>Edgio with Next.Js"
     ],
     tags: [
       {
@@ -262,8 +268,13 @@ const projects = [
         name: "Tealium",
         color: "orange-text-gradient",
       },
+      {
+        name: "Edgio",
+        url: 'https://edg.io/',
+        color: "brown-text-gradient",
+      },
     ],
-    image: carrent,
+    image: mattressfirm,
     source_code_link: "https://www.mattressfirm.com/",
     source_website_link: "https://www.mattressfirm.com/",
   },
@@ -293,7 +304,7 @@ const projects = [
         color: "purple-text-gradient",
       },
     ],
-    image: jobit,
+    image: Delcit,
     source_code_link: "https://bookstore.sgi-usa.org/",
     source_website_link: "https://bookstore.sgi-usa.org/",
   },
@@ -326,7 +337,8 @@ const projects = [
         color: "white-text-gradient",
       }
     ],
-    image: tripguide,
+    image: SydneyForex,
+    source_website_link: "https://bookstore.sgi-usa.org/",
     source_code_link: "https://github.com/",
   },
   {
@@ -357,8 +369,9 @@ const projects = [
         color: "white-text-gradient",
       }
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: HRM,
+    source_website_link: "https://people.partners/",
+    source_code_link: "https://people.partners/",
   },
   {
     name: "Qatar News Agency (Doha, Qatar)",
@@ -400,8 +413,9 @@ const projects = [
         color: "badge-text-gradient",
       }
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Qatar,
+    source_website_link: "https://www.qna.org.qa/en/",
+    source_code_link: "https://www.qna.org.qa/en/",
   },
   {
     name: "Document managment system (Doha, Qatar)",
@@ -431,7 +445,7 @@ const projects = [
         color: "white-text-gradient",
       },
     ],
-    image: tripguide,
+    image: Asset,
     source_code_link: "https://github.com/",
   },
   

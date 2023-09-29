@@ -30,41 +30,63 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    const data = {
+      emailbody: form.message
+    }
+    fetch('/api/api_four', {
+      method: 'POST',
+      // credentials: 'include',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      setLoading(false);
+      alert("Thank you. I will get back to you as soon as possible.");
 
-    emailjs
-      .send(
-        'service_uhsbcwg',
-        'template_fm25mq8',
-        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Muhammad Bilal",
-          from_email: form.email,
-          to_email: "support@hackerwasii.com",
-          message: form.message,
-        },
-        'lspB9U7p7sAqIrbRq'
-        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    })
+      .catch(err => {
+        setLoading(false);
+        console.error(err);
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
+        alert("Ahh, something went wrong. Please try again.");
+      });
+    // emailjs
+    //   .send(
+    //     'service_uhsbcwg',
+    //     'template_fm25mq8',
+    //     // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+    //     // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+    //     {
+    //       from_name: form.name,
+    //       to_name: "Muhammad Bilal",
+    //       from_email: form.email,
+    //       to_email: "bilalusuf93@hotmail.com",
+    //       message: form.message,
+    //     },
+    //     'lspB9U7p7sAqIrbRq'
+    //     // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     () => {
+    //       setLoading(false);
+    //       alert("Thank you. I will get back to you as soon as possible.");
 
-          alert("Ahh, something went wrong. Please try again.");
-        }
-      );
+    //       setForm({
+    //         name: "",
+    //         email: "",
+    //         message: "",
+    //       });
+    //     },
+    //     (error) => {
+
+    //     }
+    //   );
   };
 
   return (
