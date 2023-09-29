@@ -1,4 +1,5 @@
 
+'use client'
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
@@ -10,7 +11,7 @@ const Tech = () => {
       {technologies.map((technology) => (
         <div className='w-28 h-28' key={technology.name}>
           <Image src={technology.icon} alt={technology.name} />
-         {/* {typeof window === undefined ? <Image src={technology.icon} alt={technology.name} /> : <BallCanvas icon={technology.icon} />}  */}
+          {/* <BallCanvas icon={technology?.icon} />  */}
           
         </div>
       ))}

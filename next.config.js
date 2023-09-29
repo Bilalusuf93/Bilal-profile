@@ -11,7 +11,7 @@ const nextConfig = {
             // domains: ["randomuser.me"],
         }
     ],
-    domains: ['randomuser.me']
+    domains: ['randomuser.me', 'drive.google.com', 'doc-04-3o-docs.googleusercontent.com'],
     // domains: ["randomuser.me", "images.unsplash.com"],
     
     // deviceSizes: [320, 576, 768, 1024, 1200],

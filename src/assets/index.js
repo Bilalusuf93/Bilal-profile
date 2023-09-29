@@ -29,6 +29,13 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import mattressfirm from './mattressfirm.png'
+import Delcit from './Delcit.jpg';
+import SydneyForex from './SydneyForex.jpg';
+import Qatar from './Qatar.jpg';
+import Asset from './Asset.jpg';
+import HRM from './HRM.jpg';
+import WebLogo from './Web-logo.png';
 
 export {
   logo,
@@ -59,4 +66,11 @@ export {
   carrent,
   jobit,
   tripguide,
+  mattressfirm,
+  Delcit,
+  SydneyForex,
+  Qatar,
+  Asset,
+  HRM,
+  WebLogo
 };
