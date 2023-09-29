@@ -35,7 +35,7 @@ import SydneyForex from './SydneyForex.jpg';
 import Qatar from './Qatar.jpg';
 import Asset from './Asset.jpg';
 import HRM from './HRM.jpg';
-import WebLogo from './Web-logo.png';
+import WebLogo from './web-logo.png';
 
 export {
   logo,
