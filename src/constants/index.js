@@ -203,33 +203,33 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+      "I thought it was impossible to make a website as beautiful as our product, but Bilal proved me wrong.",
+    name: "Aliza",
     designation: "CFO",
-    company: "Acme Co",
+    company: "Sydney Forex",
     image: "women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "I've never met a web developer who truly cares about their client's success as Bilal does.",
+    name: "Elijah",
+    designation: "Tech Lead",
+    company: "Mattress firm",
     image: "men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Bilal optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
-    company: "456 Enterprises",
+    company: "Moxie Sozo",
     image: "women/6.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Mattressfirm",
+    name: "Mattress firm",
     description:
       "E-commerce web application, where users can select best possible matched mattresses, pillows and other related items, NextJS and React is the frontend library, backend APIs consumed using nextjs builtin support for wrting APIs for SSR functionality",
     roleFeatures: [
